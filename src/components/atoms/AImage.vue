@@ -1,0 +1,33 @@
+<script setup lang="ts">
+interface IAImage {
+    currentImage: string
+}
+const props = defineProps<IAImage>()
+</script>
+
+
+
+
+<template>
+<div>
+      <div class="absolute inset-0 flex items-center justify-center">
+        <img :src="props.currentImage" alt="Zooming Picture" class="zoom-effect">
+      </div>
+</div>
+</template>
+
+<style scoped>
+.zoom-effect {
+  animation: zoom-in 15s infinite;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
+
+</style>
