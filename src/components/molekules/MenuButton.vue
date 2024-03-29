@@ -5,8 +5,8 @@
 <figure id="welcomeMessage">
   <figcaption>
     <h1>
-      <label for="toggleOpen" title="Click to Open"></label>
-      <label for="toggleClose" title="Click to Close">✖</label>
+        <label for="toggleOpen" title="Click to Open"></label>
+        <label for="toggleClose" title="Click to Close">✖</label>
       <b>
         <a href="javascript:void(0);" title="Go To Home">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">

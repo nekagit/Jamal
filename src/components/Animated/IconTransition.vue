@@ -25,10 +25,10 @@ onMounted(() => {
 
 <style scoped>
 .main {
-  background-color: rgb(26, 26, 26);
+  background-color: rgb(255, 255, 255);
 
 }
 .icon {
-  color:white;
+  color:rgb(0, 0, 0);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }</style>

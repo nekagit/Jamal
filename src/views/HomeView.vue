@@ -1,8 +1,8 @@
 <template>
-  <main class="main h-screen w-full">
+  <main class="main h-screen w-full p-5">
     <!-- <AImage :currentImage="currentImage" /> -->
     <!-- <JumboTron /> -->
-    <div class="grid place-content-center text-white text-3xl p-1 py-3"><MenuButton /></div>
+    <div class="grid place-content-center text-white text-xl my-5"><MenuButton /></div>
     <div class="menu mx-auto">
       <!-- <p class="grid place-content-center text-xl p-2 text-white hover:border-red-300">Menu</p> -->
       
@@ -22,7 +22,7 @@ const currentImage = ref(img1)
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: rgb(47, 47, 47);
+  background-color: rgb(31, 25, 25);
 }
 .menu {
   border: 1px solid white;
