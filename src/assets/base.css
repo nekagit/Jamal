@@ -49,6 +49,10 @@
     --color-text: var(--vt-c-text-dark-2);
   }
 }
+@font-face {
+  font-family: Handwritten;
+  src: url(ArchitectsDaughter-Regular.ttf);
+}
 html, body {
    max-width: 100% !important;
    overflow: auto;

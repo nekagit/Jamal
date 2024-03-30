@@ -20,7 +20,10 @@ const selectedImageIndex = ref(1);
 
 onMounted(() => {
   const tl = gsap.timeline({ duration: 3, repeat: 0 });
-  tl.fromTo('.menuButton', { opacity: 0 }, { opacity: 1 });
+  tl.fromTo('.menuButton', { opacit@font-face {
+  font-family: Handwritten;
+  src: url(ArchitectsDaughter-Regular.ttf);
+}y: 0 }, { opacity: 1 });
 });
 
 const images = [

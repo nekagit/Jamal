@@ -8,7 +8,7 @@ onMounted(() => {
   tl.fromTo(
     '.router',
     { width: '0%', margin: 'auto' },
-    { width: '95%', duration: 3, ease: 'power2.inOut' }
+    { width: '100%', duration: 3, ease: 'power2.inOut' }
   )
 })
 </script>
