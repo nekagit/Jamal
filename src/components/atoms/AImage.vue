@@ -9,16 +9,14 @@ const props = defineProps<IAImage>()
 
 
 <template>
-<div>
-      <div class="absolute inset-0 flex items-center justify-center">
+      <div class="flex items-center justify-center">
         <img :src="props.currentImage" alt="Zooming Picture" class="zoom-effect">
       </div>
-</div>
 </template>
 
 <style scoped>
 .zoom-effect {
-  animation: zoom-in 15s infinite;
+  /* animation: zoom-in 15s infinite; */
 }
 
 @keyframes zoom-in {
