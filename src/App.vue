@@ -2,6 +2,7 @@
 import { RouterView } from 'vue-router'
 import gsap from 'gsap'
 import { onMounted, ref } from 'vue'
+import MenuButton from '@/components/molekules/MenuButton.vue';
 
 onMounted(() => {
   const tl = gsap.timeline({ repeat: 0, duration: 0 })
@@ -14,7 +15,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <div ref="router" class="router">
+<MenuButton />
+<div class="router">
     <RouterView />
   </div>
 </template>
