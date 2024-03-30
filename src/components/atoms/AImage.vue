@@ -17,6 +17,7 @@ const props = defineProps<IAImage>()
 <style scoped>
 .zoom-effect {
   /* animation: zoom-in 15s infinite; */
+  max-height: 50vh!important;
 }
 
 @keyframes zoom-in {

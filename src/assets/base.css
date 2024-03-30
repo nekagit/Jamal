@@ -1,6 +1,6 @@
 :root {
   --color-primary: #002626;
-  --color-secondary: #F0F7EE;
+  --color-secondary: #f0f7ee;
   --duration: 1s;
   --nav-duration: calc(var(--duration) / 4);
   --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -13,41 +13,60 @@
 
 * {
   box-sizing: border-box;
-    -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
 *::-webkit-scrollbar {
   display: none;
 }
 
-
 *:not(html):not(body) {
-   font-family: 'Handwritten', cursive!important;
+  font-family: 'Handwritten', cursive !important;
 }
 
 @font-face {
   font-family: Handwritten;
   src: url(ArchitectsDaughter-Regular.ttf);
 }
-html, body {
-   max-width: 100% !important;
-   overflow: auto;
+html,
+body {
+  overflow: auto;
 }
 body {
-   min-height: calc((1vw + 1vh) * 75);  
-   font-family: var(--font-primary);
+  min-height: calc((1vw + 1vh) * 75);
+  font-family: var(--font-primary);
   font-size: var(--font-size);
   line-height: var(--line-height);
-   box-shadow: 0 0 0 black, 0 0 6em #8a4d0f inset;
-   background: #fffef0;
-   margin: 0;
-   padding: 2em;
+  box-shadow:
+    0 0 0 black,
+    0 0 6em #8a4d0f inset;
+  background: #fffef0;
+  margin: 0;
 }
 
 h1 {
   margin-bottom: calc(var(--space) * 3);
   font-family: var(--font-heading);
-  font-size: calc(var(--font-size) + 6vmin);
+  font-size: calc(var(--font-size) + 3vmin);
   line-height: calc(var(--line-height) / 1.25);
+}
+h2 {
+  margin-bottom: calc(var(--space) * 3);
+  font-family: var(--font-heading);
+  font-size: calc(var(--font-size) + 2vmin);
+  line-height: calc(var(--line-height) / 1.25);
+}
+h3 {
+  margin-bottom: calc(var(--space) * 3);
+  font-family: var(--font-heading);
+  font-size: calc(var(--font-size) + 1vmin);
+  line-height: calc(var(--line-height) / 1.25);
+}
+
+.section {
+  background-color: white;
+  max-height: 100vh;
+  height: 100vh;
+  border: 1px solid black;
 }
