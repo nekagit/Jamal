@@ -91,19 +91,3 @@ body {
 	box-shadow: 1em 1.5em 1.5em -1em rgba(0, 0, 0, 0.5);
 	box-sizing: border-box;
 }
-
-/* Media */
-img, video, iframe {
-   padding: 0 !important;
-   margin: 0 !important;
-}
-
-::cue {
-  color: #d9e365;
-  background-color: rgba(0, 0, 0, 0.7);
-  font-family: "Mono";
-  font-size: 2rem;
-}
-
-
-

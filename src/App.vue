@@ -20,8 +20,4 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.router {
-  border-left: 1px solid rgba(255, 0, 0, 0.208);
-  border-right: 1px solid rgba(255, 0, 0, 0.261);
-}
 </style>
