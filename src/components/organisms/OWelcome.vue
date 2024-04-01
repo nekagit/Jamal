@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <div>
+    <div class="frame cutout">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div class="md:pr-8">
           <h1>Dear Visitor,</h1>
@@ -19,7 +19,6 @@
       <hr class="my-8 md:hidden" />
       <!-- Add your additional content here -->
     </div>
-    <div>asdf</div>
   </section>
 </template>
 
@@ -28,6 +27,31 @@ import image1 from '@/assets/1.jpg';
 </script>
 
 <style scoped>
+.frame {
+        box-sizing: border-box;
+        width: 90%;
+        height: 21vh;
+        margin: 1em;
+        padding: 50px;
+        border: 1em solid;
+        border-image-source: paint(svg-border-image);
+        border-image-slice: calc(100% * var(--svg-slice) / var(--svg-size)) fill;
+        resize: both;
+        overflow: hidden;
+  border: 1px solid black;
+      }
+
+      .frame.cutout {
+        --svg-path: 'M2 0H1C1 .6.6 1 0 1v1c.6 0 1 .4 1 1h1c0-.6.4-1 1-1V1a1 1 0 0 1-1-1Z';
+        --svg-size: 3;
+        --svg-slice: 1;
+        border-image-slice: calc(100% * var(--svg-slice) / var(--svg-size)) fill;
+        transition: border-width 200ms ease;
+      }
+      .frame.cutout:hover {
+        border-width: 0;
+      }
+
 /* Add any additional styling if needed */ /* Add any additional styling if needed */
 button {
  position: relative;

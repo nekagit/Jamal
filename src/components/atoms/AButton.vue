@@ -1,18 +1,5 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-export enum Asdf {
-
-}
-export interface IBaseEntity {
-    name: string,
-    entityKey: EntityKey.Button,
-}
-
-interface IAButton extends IBaseItem {
-
-}
-
-const props = defineProps<>();
 const showComponents = ref(false);
 
 const toggleComponents = () => {
