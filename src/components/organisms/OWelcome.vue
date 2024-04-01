@@ -1,27 +1,101 @@
 <template>
-  <section class="section ">
+  <section class="section">
     <div>
-        
-        <h1>Dear Visitor,</h1>
-        <h2 class="w-[70%]">Welcome to Jamal Projects!</h2>
-        <img :src="image1" />
-        <hr>
-        <h3 class="w-[33%]">
-            My parents gave me the name Jamal,<br/> In arabic it means beauty.<br/>  I really want to create
-            something astonishing. This site shows my work until today as a Master student.
-        </h3>
-        <div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="md:pr-8">
+          <h1>Dear Visitor,</h1>
+          <h2 class="mt-4 md:mt-0">Welcome to Jamal Projects!</h2>
+          <h3 class="mt-4">
+            My parents gave me the name Jamal,<br />
+            In Arabic it means beauty.<br />
+            I really want to create astonishing buildings. <br />
+            This site shows my work until today as a Master student.
+          </h3>
+          <hr>
+          <button class="m-5 learn-more">Learn More</button>
         </div>
+        <img :src="image1" alt="asf" class="object-cover md:h-auto" />
+      </div>
+      <hr class="my-8 md:hidden" />
+      <!-- Add your additional content here -->
     </div>
-    <div>
-        asdf
-    </div>
+    <div>asdf</div>
   </section>
 </template>
 
 <script setup lang="ts">
-import type AImage from '../atoms/AImage.vue';
-import image1 from '@/assets/1.jpg'
+import image1 from '@/assets/1.jpg';
 </script>
 
-<style scoped></style>
+<style scoped>
+/* Add any additional styling if needed */ /* Add any additional styling if needed */
+button {
+ position: relative;
+ display: inline-block;
+ cursor: pointer;
+ outline: none;
+ border: 0;
+ vertical-align: middle;
+ text-decoration: none;
+ font-family: inherit;
+ font-size: 15px;
+}
+
+button.learn-more {
+ font-weight: 600;
+ color: #382b22;
+ text-transform: uppercase;
+ padding: 1.25em 2em;
+ background: #f0f1ff;
+ border: 2px solid #b18597;
+ border-radius: 0.75em;
+ -webkit-transform-style: preserve-3d;
+ transform-style: preserve-3d;
+ -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+ transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+button.learn-more::before {
+ position: absolute;
+ content: '';
+ width: 100%;
+ height: 100%;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: #c8c4f9;
+ border-radius: inherit;
+ -webkit-box-shadow: 0 0 0 2px #8587b1, 0 0.625em 0 0 #ffe3e2;
+ box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+ -webkit-transform: translate3d(0, 0.75em, -1em);
+ transform: translate3d(0, 0.75em, -1em);
+ transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+
+button.learn-more:hover {
+ background: #e9e9ff;
+ -webkit-transform: translate(0, 0.25em);
+ transform: translate(0, 0.25em);
+}
+
+button.learn-more:hover::before {
+ -webkit-box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+ box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+ -webkit-transform: translate3d(0, 0.5em, -1em);
+ transform: translate3d(0, 0.5em, -1em);
+}
+
+button.learn-more:active {
+ background: #eae9ff;
+ -webkit-transform: translate(0em, 0.75em);
+ transform: translate(0em, 0.75em);
+}
+
+button.learn-more:active::before {
+ -webkit-box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+ box-shadow: 0 0 0 2px #b18597, 0 0 #e5e2ff;
+ -webkit-transform: tsomethingranslate3d(0, 0, -1em);
+ transform: translate3d(0, 0, -1em);
+}
+</style>

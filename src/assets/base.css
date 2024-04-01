@@ -48,19 +48,19 @@ body {
 h1 {
   margin-bottom: calc(var(--space) * 3);
   font-family: var(--font-heading);
-  font-size: calc(var(--font-size) + 3vmin);
+  font-size: calc(var(--font-size) + 6vmin);
   line-height: calc(var(--line-height) / 1.25);
 }
 h2 {
   margin-bottom: calc(var(--space) * 3);
   font-family: var(--font-heading);
-  font-size: calc(var(--font-size) + 2vmin);
+  font-size: calc(var(--font-size) + 4vmin);
   line-height: calc(var(--line-height) / 1.25);
 }
 h3 {
   margin-bottom: calc(var(--space) * 3);
   font-family: var(--font-heading);
-  font-size: calc(var(--font-size) + 1vmin);
+  font-size: calc(var(--font-size) + 3vmin);
   line-height: calc(var(--line-height) / 1.25);
 }
 
