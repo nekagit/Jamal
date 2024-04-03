@@ -1,6 +1,10 @@
 <template>
     <AImage :currentImage="props.currentImage" />
- 
+    <div class="imageText text-center">
+
+        <h1>Titel des Projekts</h1>
+        <h3>ProjektTyp  </h3>
+    </div>
 </template>
 
 <script setup lang="ts">
@@ -12,4 +16,8 @@ const props = defineProps<IMImageSlider>()
 </script>
 
 <style scoped>
+.imageText {
+  color: #002626;
+
+}
 </style>

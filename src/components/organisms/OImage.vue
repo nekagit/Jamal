@@ -1,28 +1,26 @@
 <template>
   <section class="section">
-    <ImageSlider :currentImage="getImageSource(selectedImageIndex)" />
     <input
-      class="range-slider"
-      type="range"
-      min="1"
-      max="10"
-      v-model="selectedImageIndex"
-      id="imgRange"
+    class="range-slider w-full"
+    type="range"
+    min="1"
+    max="4"
+    v-model="selectedImageIndex"
+    id="imgRange"
     />
+    <ImageSlider :currentImage="getImageSource(selectedImageIndex)" />
   </section>
 </template>
 
 <script setup lang="ts">
-import ImageSlider from '@/components/molekules/ImageSlider.vue'
-import gsap from 'gsap'
-import { onMounted } from 'vue'
-import image1 from '@/assets/1.jpg'
-import image2 from '@/assets/2.jpg'
-import { ref } from 'vue'
+import ImageSlider from '@/components/molekules/ImageSlider.vue';
+import { image1, image2, image3, image4 } from '@/helpers/HImages';
+import gsap from 'gsap';
+import { onMounted, ref } from 'vue';
 
 const selectedImageIndex = ref(1)
 
-const images = [image1, image2, image1, image2, image1, image2, image1, image2, image1, image2]
+const images = [image1, image2, image3, image4]
 
 const getImageSource = (index: number) => {
   return images[index - 1]
@@ -35,40 +33,35 @@ onMounted(() => {
 
 <style scoped>
 .section {
-  background-color:rgb(26,26,26);
+  background-color:rgba(26, 26, 26, 0.176);
+  display:flex;
+  flex-direction: column;
+  justify-content:space-around;
 }
 
 input[type='range'] {
   font-size: 1.5rem;
-  width: 12.5em;
+  width: 100%;
 }
 
 input[type='range'] {
-  color: #000000;
-  --thumb-height: 1.125em;
+  color: #002626;
+  --thumb-height: .8125em;
   --track-height: 0.125em;
-  --track-color: rgba(0, 0, 0, 0.2);
+  --track-color: rgb(255, 255, 255);
   --brightness-hover: 180%;
   --brightness-down: 80%;
   --clip-edges: 0.125em;
 }
 
 input[type='range'].win10-thumb {
-  color: #2b2d42;
-
+  color: #ffffff;
   --thumb-height: 1.375em;
-  --thumb-width: 0.5em;
+  --thumb-width: 5em;
   --clip-edges: 0.0125em;
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    background-color: #000;
-  }
-
-  html::before {
-    background: radial-gradient(circle at center, #101112, #000);
-  }
 
   input[type='range'] {
     color: #f07167;
@@ -168,7 +161,7 @@ input[type='range']::-moz-range-thumb {
 input[type='range']::-moz-range-track,
 input[type='range']::-moz-range-thumb,
 input[type='range']::-moz-range-progress {
-  background: #fff0;
+  background: rgba(245, 234, 234, 0);
 }
 
 input[type='range']::-moz-range-thumb {
