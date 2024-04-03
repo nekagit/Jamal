@@ -23,7 +23,7 @@
 </template>
 
 <script setup lang="ts">
-import image1 from '@/assets/1.jpg';
+import image1 from '@/assets/Jamal/DSC_7492_Kopie.jpg';
 </script>
 
 <style scoped>
@@ -39,6 +39,7 @@ import image1 from '@/assets/1.jpg';
   resize: both;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); /* Example box shadow */
   overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.071);
 }
 
 .frame.cutout {
