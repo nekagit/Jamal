@@ -1,3 +1,4 @@
+import OGallery from '@/components/organisms/OGallery.vue'
 import HomeView from '@/views/HomeView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -8,7 +9,9 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView
-    }
+    },
+    { path: '/projects', name: 'projects', component: OGallery },
+    // { path: '/contact', name: 'contact', component:OContact  }
     // {
     //   path: '/about',
     //   name: 'about',
