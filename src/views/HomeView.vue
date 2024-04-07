@@ -8,7 +8,6 @@
 <script setup lang="ts">
 import OImage from '@/components/organisms/OImage.vue';
 import OWelcome from '@/components/organisms/OWelcome.vue';
-
 </script>
 
 <style scoped>

@@ -1,0 +1,256 @@
+<script setup lang="ts">
+</script>
+
+<template>
+    <!-- ne radi example 3 kada je crna pozadina -->
+    <body>
+    <br>
+    <br>
+        <div class="card example-1">
+            <div class="inner">
+                Example 1
+            </div>
+        </div>
+
+        <div class="card example-2">
+            <div class="inner">
+                Example 2
+            </div>
+        </div>
+
+        <div class="card example-3">
+            <div class="inner">
+                Example 3
+            </div>
+        </div>
+
+
+        <div class="card example-4">
+            <div class="inner">
+                Example 4
+            </div>
+        </div>
+
+        <div className="card example-5">
+            <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <rect rx="8" ry="8" class="line" height="100%" width="100%" stroke-linejoin="round" />
+            </svg>
+            <div className="inner">
+                Example 5
+            </div>
+        </div>
+    </body>
+</template>
+
+
+
+<style scoped>
+
+/* body {
+    background-color: black;
+} */
+
+.card {
+    max-width: 400px;
+    width: 100%;
+    margin: 50px auto;
+    border-radius: var(--border-radius);
+}
+
+.card .inner {
+    padding: 25px;
+    background: #222;
+    color: #fff;
+    border-radius: var(--border-radius);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+.example-1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.example-1 .inner {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin: 5px;
+}
+
+.example-1::before {
+    content: "";
+    display: block;
+    background: linear-gradient(90deg,
+            hsla(197, 100%, 64%, 1) 0%,
+            hsla(339, 100%, 55%, 1) 100%);
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    animation: rotate 8s linear infinite;
+    z-index: 0;
+}
+
+.example-2 {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.example-2 .inner {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin: 2px;
+}
+
+.example-2 .inner {
+    margin: 2px;
+}
+
+.example-2::before {
+    content: "";
+    display: block;
+    background: linear-gradient(90deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(102, 102, 102, 0.75) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    height: 300px;
+    width: 100px;
+    transform: translate(0);
+    position: absolute;
+    animation: rotate 5s linear forwards infinite;
+    z-index: 0;
+    top: 50%;
+    transform-origin: top center;
+}
+
+.example-3 {
+    position: relative;
+    border-radius: var(--border-radius);
+    padding: 4px;
+}
+
+.example-3 .inner {
+    border-radius: 4px;
+}
+
+.example-3::before,
+.example-3::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(45deg,
+            #ff595e,
+            #ffca3a,
+            #8ac926,
+            #1982c4,
+            #6a4c93,
+            #ff6700);
+    background-size: 400%;
+    z-index: -1;
+    animation: glow 20s linear infinite;
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+
+.example-3::after {
+    filter: blur(25px);
+    transform: translate3d(0, 0, 0);
+    /* For Safari */
+}
+
+@keyframes glow {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.example-4 {
+    outline-width: 1px;
+    outline-offset: 0;
+    outline-color: rgba(0, 130, 206, 0.75);
+    outline-style: solid;
+    animation: animateOutline 4s ease infinite;
+}
+
+
+.example-5 {
+    position: relative;
+}
+
+.example-5 svg {
+    position: absolute;
+}
+
+.example-5 .line {
+    stroke-dasharray: 260;
+    stroke-width: 1px;
+    fill: transparent;
+    stroke: rgba(78, 255, 13, 0.3);
+    animation: svgAnimation 2.5s linear infinite;
+}
+
+@keyframes svgAnimation {
+    from {
+        stroke-dashoffset: 0;
+    }
+
+    to {
+        stroke-dashoffset: 1000;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animateOutline {
+    0% {
+        outline-width: 1px;
+        outline-offset: 0;
+        outline-color: rgba(0, 130, 206, 0);
+    }
+
+    10% {
+        outline-color: rgba(0, 130, 206, 0.75);
+    }
+
+    /* The animation finishes at 50% */
+    50% {
+        outline-width: 7px;
+        outline-offset: 4px;
+        outline-color: rgba(0, 130, 206, 0);
+    }
+
+    100% {
+        outline-width: 7px;
+        outline-offset: 4px;
+        outline-color: rgba(102, 102, 102, 0);
+    }
+}
+</style>
