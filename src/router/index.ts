@@ -15,7 +15,7 @@ const router = createRouter({
     },
     { path: '/projects', name: 'projects', component: OGallery },
     { path: '/contact', name: 'contact', component: OContact  },
-    { path: '/impressum', name: 'impressum', component: OImpressum  }
+    { path: '/impressum', name: 'impressum', component: OImpressum  },
     { path: '/aboutus', name: 'aboutus', component: OAboutus  }
 
     // {
