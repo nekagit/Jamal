@@ -9,9 +9,14 @@
       </div>
     </div>
   </div>
+  <div>
+    <OMorph />
+  </div>
 </template>
 
 <script setup lang="ts">
+import OMorph from './OMorph.vue';
+
 import image1 from '@/assets/old/1.jpg'
 import image2 from '@/assets/old/2.jpg'
 

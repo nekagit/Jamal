@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import GlassMorphism from '../molekules/GlassMorphism.vue';
 </script>
 
 <template>
@@ -59,6 +59,9 @@
       </div>
     </div>
 
+  </div>
+  <div>
+    <GlassMorphism />
   </div>
 
 </template>
