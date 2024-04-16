@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import GlassMorphism from '../molekules/GlassMorphism.vue';
 import GlassMorphism2 from '../molekules/GlassMorphism2.vue';
+import CreditCard from '../molekules/CreditCard.vue';
 </script>
 
 <template>
@@ -15,6 +16,8 @@ import GlassMorphism2 from '../molekules/GlassMorphism2.vue';
                 <button class="btn">Get Started</button>
             </div>
             <div class="blob"></div>
+            <div class="blob"></div> 
+            <!-- jos jedna loptica za bolji efekat -->
         </div>
 
         <br><br><br>
@@ -25,6 +28,12 @@ import GlassMorphism2 from '../molekules/GlassMorphism2.vue';
         <div>
             <GlassMorphism2 />
         </div>
+        <div>
+            <CreditCard />
+        </div>
+        <!-- <div>
+            <StoreGlassMorph />
+        </div> -->
     </body>
 </template>
 
