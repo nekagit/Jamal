@@ -22,6 +22,7 @@
     <li><router-link to="/projects">Projects</router-link></li>
     <li><router-link to="/contact">Contact</router-link></li>
     <li><router-link to="/impressum">Impressum</router-link></li>
+    <li><router-link to="/morph">Morph</router-link></li>
   </ul>
 </nav>
 

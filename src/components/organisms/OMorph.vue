@@ -2,6 +2,7 @@
 import GlassMorphism from '../molekules/GlassMorphism.vue';
 import GlassMorphism2 from '../molekules/GlassMorphism2.vue';
 import CreditCard from '../molekules/CreditCard.vue';
+import GlassMorphismCard from '../molekules/GlassMorphismCard.vue';
 </script>
 
 <template>
@@ -31,9 +32,9 @@ import CreditCard from '../molekules/CreditCard.vue';
         <div>
             <CreditCard />
         </div>
-        <!-- <div>
-            <StoreGlassMorph />
-        </div> -->
+        <div>
+            <GlassMorphismCard />
+        </div>
     </body>
 </template>
 

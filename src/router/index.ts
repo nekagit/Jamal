@@ -2,6 +2,7 @@ import OGallery from '@/components/organisms/OGallery.vue'
 import OContact from '@/components/organisms/OContact.vue'
 import OImpressum from '@/components/organisms/OImpressum.vue'
 import OAboutus from '@/components/organisms/OAboutus.vue'
+import OMorph from '@/components/organisms/OMorph.vue'
 import HomeView from '@/views/HomeView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -16,7 +17,8 @@ const router = createRouter({
     { path: '/projects', name: 'projects', component: OGallery },
     { path: '/contact', name: 'contact', component: OContact  },
     { path: '/impressum', name: 'impressum', component: OImpressum  },
-    { path: '/aboutus', name: 'aboutus', component: OAboutus  }
+    { path: '/aboutus', name: 'aboutus', component: OAboutus  },
+    { path: '/morph', name: 'morph', component: OMorph  }
 
     // {
     //   path: '/about',
